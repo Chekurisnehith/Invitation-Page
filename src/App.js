@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';// Importing React core library
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';// Importing components required for routing from react-router-dom
+import Home from './components/Home/Home';// Importing the Home component which will be displayed on the homepage
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // Wrapping the application with Router so routing works throughout the app
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,314 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+  color: #666;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #f8b195;
+}
+
+.mainContent {
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+.teddyBear {
+  width: 120px;
+  margin-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 48px;
+  color: #f8b195;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.babyInfo {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.dateTime {
+  font-size: 20px;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+.invitedBy {
+  margin: 40px 0;
+}
+
+.invitedBy h3 {
+  color: #666;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.decoration {
+  position: absolute;
+  width: 150px; /* Small but clear */
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 🎈 Random but beautiful edge placements */
+.dec1 {
+  top: 100px;
+  left: -89px;
+  width: 300px;
+}
+
+.dec2 {
+  bottom: 120px;
+  right: -50px;
+  
+}
+
+
+.dec3 {
+  top: 250px;
+  right: -40px;
+  width: 250px;
+}
+
+
+.dec4 {
+  bottom: 80px;
+  left: -40px;
+}
+
+.dec5 {
+  top: 500px;
+  left:-40px;
+  width: 280px;
+}
+
+.dec6 {
+  bottom: 1200px;
+  right: -90px;
+  width: 300px;
+}
+
+.dec7 {
+  top: 920px;
+  left: 10%;
+  transform: translateX(-50%);
+  width: 300px;
+}
+
+
+
+.babyName {
+  color: #f8b195;
+  font-size: 32px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.pageHeading {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #f8b195;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+.venue {
+  margin: 40px 0;
+}
+
+.venue h3 {
+  color: #666;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.address {
+  color: #888;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.rsvpSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.rsvpForm {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #eee;
+  border-radius: 15px;
+}
+
+.mapContainer {
+  flex: 1;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.gallery {
+  margin: 60px 0;
+}
+
+.gallery h2 {
+  color: #666;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.galleryImage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #7fa3a7;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  clip-path: circle(50% at 50% 50%);
+}
+
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #666;
+  margin-top: 60px;
+}
+
+.decorations {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+
+@media (max-width: 768px) {
+  .rsvpSection {
+    flex-direction: column;
+  }
+  
+  .mapContainer {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .title {
+    font-size: 36px;
+  }
+  
+  .babyName {
+    font-size: 28px;
+  }
+  .decoration {
+    display: block;
+  }
+
+  .dec1 {
+    top: 100px;
+    left: -60px;
+    width: 200px;
+  }
+
+  .dec2 {
+    bottom: 120px;
+    right: -50px;
+   
+  }
+  
+  
+  .dec3 {
+    top: 250px;
+    right: -40px;
+    width: 150px;
+  }
+  
+  
+  .dec4 {
+    bottom: 80px;
+    left: -40px;
+  }
+  
+  .dec5 {
+    top: 400px;
+    left:-40px;
+    width: 150px;
+  }
+  
+  .dec6 {
+    bottom: 1100px;
+    right: -90px;
+    width: 210px;
+  }
+  
+  .dec7 {
+    top: 1020px;
+    left: 10%;
+    transform: translateX(-50%);
+    width: 180px;
+  }
+
+  .galleryGrid {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  
+} 
+
+
